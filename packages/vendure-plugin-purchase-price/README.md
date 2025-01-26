@@ -1,11 +1,7 @@
-# Example Plugin
+# Purchase price Plugin
 
-This is an example plugin for Vendure. It demonstrates the overall file structure, code style, documentation
-conventions and build setup for a publishable Vendure plugin.
+This is a plugin to add the purchase price of variants to Vendure.
 
 ## Features
 
-- Really cool feature 1
-- Really cool feature 2
-- Amazing feature 3
-- And so on...
+- Purchase price customfield on variantPrice
