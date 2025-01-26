@@ -1,0 +1,26 @@
+{
+    "name": "@merope/vendure-plugin-purchase-price",
+    "description": "An plugin for Vendure adding purchase price to product-variants",
+    "version": "0.0.1",
+    "license": "GPL-3.0-or-later",
+    "publishConfig": {
+        "access": "public"
+    },
+    "files": [
+        "dist/**/*",
+        "CHANGELOG.md",
+        "docs"
+    ],
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "dev": "ts-node dev-server/index.ts",
+        "nodev": "nodemon dev-server/index.ts",
+        "codegen": "ts-node generate-types.ts",
+        "build": "rimraf lib && tsc -p ./tsconfig.build.json && ts-node copy-ui-src.ts",
+        "e2e": "cross-env PACKAGE=example-plugin vitest -c ../../utils/e2e/vitest.config.mts"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.9"
+    }
+}
